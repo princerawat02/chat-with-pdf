@@ -8,7 +8,7 @@ function ChatBox({ messages = [], loading }) {
   }, [messages, loading]);
 
   return (
-    <div className="chat-scrollbar flex-1 min-h-0 overflow-y-auto px-4 py-5 sm:px-6">
+    <div className="chat-scrollbar flex-1  overflow-y-auto px-4 py-5 sm:px-6">
       {messages.length === 0 && !loading ? (
         <div className="flex min-h-90 items-center justify-center rounded-[20px] border border-dashed border-white/10 bg-white/2 px-6 py-12 text-center">
           <div className="max-w-md space-y-3">

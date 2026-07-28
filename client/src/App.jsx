@@ -18,9 +18,11 @@ function App() {
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.24em] text-slate-300 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-xl">
             Chat with your PDF
           </div>
+
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Ask questions about any document
           </h1>
+
           <p className="max-w-2xl text-sm leading-6 text-slate-400 sm:text-base">
             Upload one PDF and get clear answers in a polished, conversational
             workspace.
