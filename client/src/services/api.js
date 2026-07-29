@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://chat-with-pdf-1-tbrj.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 export default api;
