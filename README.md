@@ -2,6 +2,10 @@
 
 AI-powered **Retrieval-Augmented Generation (RAG)** application that lets users upload a PDF and ask natural language questions about its contents.
 
+## Live Demo
+
+🔗 https://chat-with-pdf-one-self.vercel.app/
+
 ## Preview
 
 ![Chat with PDF UI](screen.png)
@@ -32,7 +36,7 @@ AI-powered **Retrieval-Augmented Generation (RAG)** application that lets users 
 - Python
 - LangChain
 - ChromaDB
-- OpenAI API
+- OpenAI API *(or Gemini API if you've switched to Gemini)*
 - PyMuPDF
 - Uvicorn
 
