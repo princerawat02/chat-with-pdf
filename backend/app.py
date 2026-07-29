@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from config import *
+import os
 from fastapi.middleware.cors import CORSMiddleware
 
 from routers.upload import router as upload_router
@@ -9,9 +11,12 @@ app = FastAPI(
     version="1.0.0"
 )
 
+
+cors_origins = os.getenv("CORS_ORIGINS", "").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://chat-with-pdf-1-tbrj.onrender.com/"],
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
